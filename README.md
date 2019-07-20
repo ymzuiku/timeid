@@ -4,7 +4,7 @@
 如 React 对象的 key，生成 key 的行为会非常频繁，我们需要比 uuid 和 nanoid 更高的性能，才能满足 UI 的条件
 
 1. 性能：算法仅是 App 生命周期开始的毫秒数+随机数组成的字符串，性能是 nanoid 的 9 倍，是 uuidv1 的 30 倍
-2. 体积：仅有 220b，无任何依赖，兼容 node 和 brower，兼容 typescript
+2. 体积：仅有 190b，无任何依赖，兼容 node 和 brower，兼容 typescript
 3. 时间：由于 id 是由时间作为前坠，可以记录毫秒外的 id 创建顺序
 
 Math.rendom 已经使用了 Date 作为系数为什么还需要增加 Date.now ？

@@ -1,2 +1,2 @@
-export declare const timeid: () => string;
-export default timeid;
+declare const _default: () => string;
+export default _default;
